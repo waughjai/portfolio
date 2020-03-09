@@ -1,0 +1,1845 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "ee85041eda88554c8a78a5d32f2dbb43",
+    "packages": [
+        {
+            "name": "altorouter/altorouter",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dannyvankooten/AltoRouter.git",
+                "reference": "39c50092470128c12284d332bb57f306bb5b58e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dannyvankooten/AltoRouter/zipball/39c50092470128c12284d332bb57f306bb5b58e4",
+                "reference": "39c50092470128c12284d332bb57f306bb5b58e4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": "4.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "AltoRouter.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Danny van Kooten",
+                    "email": "dannyvankooten@gmail.com",
+                    "homepage": "http://dannyvankooten.com/"
+                },
+                {
+                    "name": "Koen Punt",
+                    "homepage": "https://github.com/koenpunt"
+                },
+                {
+                    "name": "niahoo",
+                    "homepage": "https://github.com/niahoo"
+                }
+            ],
+            "description": "A lightning fast router for PHP",
+            "homepage": "https://github.com/dannyvankooten/AltoRouter",
+            "keywords": [
+                "lightweight",
+                "router",
+                "routing"
+            ],
+            "time": "2015-11-30T00:47:43+00:00"
+        },
+        {
+            "name": "asm89/twig-cache-extension",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asm89/twig-cache-extension.git",
+                "reference": "13787226956ec766f4770722082288097aebaaf3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asm89/twig-cache-extension/zipball/13787226956ec766f4770722082288097aebaaf3",
+                "reference": "13787226956ec766f4770722082288097aebaaf3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "twig/twig": "^1.0|^2.0"
+            },
+            "require-dev": {
+                "doctrine/cache": "~1.0",
+                "phpunit/phpunit": "^5.0 || ^4.8.10"
+            },
+            "suggest": {
+                "psr/cache-implementation": "To make use of PSR-6 cache implementation via PsrCacheAdapter."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander",
+                    "email": "iam.asm89@gmail.com"
+                }
+            ],
+            "description": "Cache fragments of templates directly within Twig.",
+            "homepage": "https://github.com/asm89/twig-cache-extension",
+            "keywords": [
+                "cache",
+                "extension",
+                "twig"
+            ],
+            "time": "2020-01-01T20:47:37+00:00"
+        },
+        {
+            "name": "composer/installers",
+            "version": "v1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "7d610d50aae61ae7ed6675e58efeabdf279bb5e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/7d610d50aae61ae7ed6675e58efeabdf279bb5e3",
+                "reference": "7d610d50aae61ae7ed6675e58efeabdf279bb5e3",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "^4.8.36"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Eliasis",
+                "Hurad",
+                "ImageCMS",
+                "Kanboard",
+                "Lan Management System",
+                "MODX Evo",
+                "MantisBT",
+                "Mautic",
+                "Maya",
+                "OXID",
+                "Plentymarkets",
+                "Porto",
+                "RadPHP",
+                "SMF",
+                "Thelia",
+                "Whmcs",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "attogram",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "cockpit",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "eZ Platform",
+                "elgg",
+                "expressionengine",
+                "fuelphp",
+                "grav",
+                "installer",
+                "itop",
+                "joomla",
+                "known",
+                "kohana",
+                "laravel",
+                "lavalite",
+                "lithium",
+                "magento",
+                "majima",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "modx",
+                "moodle",
+                "osclass",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "pxcms",
+                "reindex",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "sydes",
+                "sylius",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "yawik",
+                "zend",
+                "zikula"
+            ],
+            "time": "2020-02-07T10:39:20+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06T14:39:51+00:00"
+        },
+        {
+            "name": "spatie/macroable",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/macroable.git",
+                "reference": "74b0d189ce75142f1706aad834d5a428dfc7c3c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/macroable/zipball/74b0d189ce75142f1706aad834d5a428dfc7c3c3",
+                "reference": "74b0d189ce75142f1706aad834d5a428dfc7c3c3",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Macroable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A trait to dynamically add methods to a class",
+            "homepage": "https://github.com/spatie/macroable",
+            "keywords": [
+                "macroable",
+                "spatie"
+            ],
+            "time": "2017-09-18T09:51:20+00:00"
+        },
+        {
+            "name": "spatie/url",
+            "version": "1.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/url.git",
+                "reference": "1cfbd5736ca595e04c27f9f07ca51bbda28d754a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/url/zipball/1cfbd5736ca595e04c27f9f07ca51bbda28d754a",
+                "reference": "1cfbd5736ca595e04c27f9f07ca51bbda28d754a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2",
+                "psr/http-message": "^1.0",
+                "spatie/macroable": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Url\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian De Deyne",
+                    "email": "sebastian@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Parse, build and manipulate URL's",
+            "homepage": "https://github.com/spatie/url",
+            "keywords": [
+                "spatie",
+                "url"
+            ],
+            "time": "2020-02-23T13:13:32+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "fbdeaec0df06cf3d51c93de80c7eb76e271f5a38"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/fbdeaec0df06cf3d51c93de80c7eb76e271f5a38",
+                "reference": "fbdeaec0df06cf3d51c93de80c7eb76e271f5a38",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.14-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "time": "2020-01-13T11:15:53+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "34094cfa9abe1f0f14f48f490772db7a775559f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/34094cfa9abe1f0f14f48f490772db7a775559f2",
+                "reference": "34094cfa9abe1f0f14f48f490772db7a775559f2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.14-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2020-01-13T11:15:53+00:00"
+        },
+        {
+            "name": "timber/timber",
+            "version": "1.15.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/timber/timber.git",
+                "reference": "bbc8bf7ea8718d3be18fd596e594dbda17e85e13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/timber/timber/zipball/bbc8bf7ea8718d3be18fd596e594dbda17e85e13",
+                "reference": "bbc8bf7ea8718d3be18fd596e594dbda17e85e13",
+                "shasum": ""
+            },
+            "require": {
+                "asm89/twig-cache-extension": "~1.0",
+                "composer/installers": "~1.0",
+                "php": ">=5.3.0|7.*",
+                "twig/twig": "^1.41|^2.10",
+                "upstatement/routes": "0.5"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+                "johnpbloch/wordpress": "*",
+                "phpunit/phpunit": "5.7.16|6.*",
+                "squizlabs/php_codesniffer": "3.*",
+                "wp-coding-standards/wpcs": "^2.0",
+                "wpackagist-plugin/advanced-custom-fields": "5.*",
+                "wpackagist-plugin/co-authors-plus": "3.2.*"
+            },
+            "suggest": {
+                "satooshi/php-coveralls": "1.0.* for code coverage"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Timber\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jared Novack",
+                    "email": "jared@upstatement.com",
+                    "homepage": "http://upstatement.com"
+                },
+                {
+                    "name": "Connor J. Burton",
+                    "email": "connorjburton@gmail.com",
+                    "homepage": "http://connorburton.com"
+                }
+            ],
+            "description": "Plugin to write WordPress themes w Object-Oriented Code and the Twig Template Engine",
+            "homepage": "http://timber.upstatement.com",
+            "keywords": [
+                "templating",
+                "themes",
+                "timber",
+                "twig"
+            ],
+            "time": "2020-02-27T02:08:18+00:00"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v2.12.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "18772e0190734944277ee97a02a9a6c6555fcd94"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/18772e0190734944277ee97a02a9a6c6555fcd94",
+                "reference": "18772e0190734944277ee97a02a9a6c6555fcd94",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "symfony/polyfill-ctype": "^1.8",
+                "symfony/polyfill-mbstring": "^1.3"
+            },
+            "require-dev": {
+                "psr/container": "^1.0",
+                "symfony/phpunit-bridge": "^4.4|^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.12-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                },
+                "psr-4": {
+                    "Twig\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Twig Team",
+                    "role": "Contributors"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "https://twig.symfony.com",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2020-02-11T15:31:23+00:00"
+        },
+        {
+            "name": "upstatement/routes",
+            "version": "0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Upstatement/routes.git",
+                "reference": "3267d28be0a73f197087d58384e1a358d85671b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Upstatement/routes/zipball/3267d28be0a73f197087d58384e1a358d85671b6",
+                "reference": "3267d28be0a73f197087d58384e1a358d85671b6",
+                "shasum": ""
+            },
+            "require": {
+                "altorouter/altorouter": "^1.1.0",
+                "composer/installers": "~1.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "satooshi/php-coveralls": "dev-master",
+                "wp-cli/wp-cli": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Routes": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jared Novack",
+                    "email": "jared@upstatement.com",
+                    "homepage": "http://upstatement.com"
+                }
+            ],
+            "description": "Manage rewrites and routes in WordPress with this dead-simple plugin",
+            "homepage": "http://routes.upstatement.com",
+            "keywords": [
+                "redirects",
+                "rewrite",
+                "routes",
+                "routing"
+            ],
+            "time": "2018-12-04T01:13:41+00:00"
+        },
+        {
+            "name": "waughj/copyright-year",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/copyright-year.git",
+                "reference": "baea7009724e51ec232607257ae9ed8c77e62943"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/copyright-year/zipball/baea7009724e51ec232607257ae9ed8c77e62943",
+                "reference": "baea7009724e51ec232607257ae9ed8c77e62943",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "waughj/test-hash-item": ">=1.0.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\CopyrightYear\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Simple class for handling auto-updating copyright year in website footers.",
+            "keywords": [
+                "Year",
+                "auto-update",
+                "copyright",
+                "footer",
+                "new year"
+            ],
+            "time": "2019-06-02T23:24:42+00:00"
+        },
+        {
+            "name": "waughj/directory",
+            "version": "0.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/directory.git",
+                "reference": "82e81fb3939b6e7a8487d4822874a36047bcf6ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/directory/zipball/82e81fb3939b6e7a8487d4822874a36047bcf6ed",
+                "reference": "82e81fb3939b6e7a8487d4822874a36047bcf6ed",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "waughj/verified-arguments-same-type": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "libraryt",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\Directory\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Simple class for encapsulating file directory object.",
+            "keywords": [
+                "directory",
+                "file"
+            ],
+            "time": "2019-05-07T22:27:50+00:00"
+        },
+        {
+            "name": "waughj/file-loader",
+            "version": "v0.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/file-loader.git",
+                "reference": "efab65e0d5e3b0a094cb8e3e4f8f881a2e93a71b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/file-loader/zipball/efab65e0d5e3b0a094cb8e3e4f8f881a2e93a71b",
+                "reference": "efab65e0d5e3b0a094cb8e3e4f8f881a2e93a71b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "spatie/url": "*",
+                "waughj/directory": "*",
+                "waughj/test-hash-item": ">=2.0.0",
+                "waughj/verified-arguments": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\FileLoader\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Object for easily generating image sources with autoversioning for handling cache corruption.",
+            "keywords": [
+                "file",
+                "loader"
+            ],
+            "time": "2019-06-04T19:54:27+00:00"
+        },
+        {
+            "name": "waughj/flat-to-hierarchy-sorter",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/flat-to-hierarchy-sorter.git",
+                "reference": "17f05ebc9997835a3a4bdb0ffc88a33a89789bc8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/flat-to-hierarchy-sorter/zipball/17f05ebc9997835a3a4bdb0ffc88a33a89789bc8",
+                "reference": "17f05ebc9997835a3a4bdb0ffc88a33a89789bc8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\FlatToHierarchySorter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Sorts flat list of nodes into hierarchy.",
+            "keywords": [
+                "Organizer",
+                "converter",
+                "hierarchy",
+                "sorter"
+            ],
+            "time": "2019-10-18T17:48:05+00:00"
+        },
+        {
+            "name": "waughj/html-attribute",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/html-attribute.git",
+                "reference": "28626a36b2e9ddfc679dfc1efee51808991e7429"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/html-attribute/zipball/28626a36b2e9ddfc679dfc1efee51808991e7429",
+                "reference": "28626a36b2e9ddfc679dfc1efee51808991e7429",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\HTMLAttribute\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Simple class for encapsulating an HTML attribute",
+            "keywords": [
+                "attribute",
+                "html"
+            ],
+            "time": "2019-06-03T18:10:15+00:00"
+        },
+        {
+            "name": "waughj/html-attribute-list",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/html-attribute-list.git",
+                "reference": "bb658abb211e04611173758df94352a51def6308"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/html-attribute-list/zipball/bb658abb211e04611173758df94352a51def6308",
+                "reference": "bb658abb211e04611173758df94352a51def6308",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "waughj/html-attribute": ">=1.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\HTMLAttributeList\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "A list o’ HTML attributes for easy HTML generation.",
+            "keywords": [
+                "attribute",
+                "html",
+                "list"
+            ],
+            "time": "2019-06-03T18:53:38+00:00"
+        },
+        {
+            "name": "waughj/html-image",
+            "version": "v0.9.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/html-image.git",
+                "reference": "e2c1643168f7ae7e91837f133f7c693d35b7f71d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/html-image/zipball/e2c1643168f7ae7e91837f133f7c693d35b7f71d",
+                "reference": "e2c1643168f7ae7e91837f133f7c693d35b7f71d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "waughj/file-loader": ">=0.5.4",
+                "waughj/html-attribute-list": ">=1.1.0",
+                "waughj/test-hash-item": ">=2.0.0"
+            },
+            "require-dev": {
+                "ngiusti/random-string-generator": "*",
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\HTMLImage\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Simple class for automatically generating image HTML code.",
+            "keywords": [
+                "autogenerate",
+                "html",
+                "image"
+            ],
+            "time": "2019-06-19T22:48:19+00:00"
+        },
+        {
+            "name": "waughj/html-link",
+            "version": "v1.2.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/html-link.git",
+                "reference": "8faa257ea7455f5cda9ae525e0f0f13dfe60f55b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/html-link/zipball/8faa257ea7455f5cda9ae525e0f0f13dfe60f55b",
+                "reference": "8faa257ea7455f5cda9ae525e0f0f13dfe60f55b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "waughj/html-attribute-list": ">=1.0.7",
+                "waughj/test-hash-item": ">=2.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\HTMLLink\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Simple class for encapsulating link info and autogenerating the HTML for it",
+            "keywords": [
+                "html",
+                "hyperlink",
+                "link"
+            ],
+            "time": "2019-06-04T20:39:15+00:00"
+        },
+        {
+            "name": "waughj/html-picture",
+            "version": "v0.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/html-picture.git",
+                "reference": "eb175fe5d3fa016f9c55e6538febbc8514d42f5e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/html-picture/zipball/eb175fe5d3fa016f9c55e6538febbc8514d42f5e",
+                "reference": "eb175fe5d3fa016f9c55e6538febbc8514d42f5e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "waughj/file-loader": ">=0.5.4",
+                "waughj/html-attribute-list": "*",
+                "waughj/html-image": ">=0.9.2",
+                "waughj/verified-arguments-same-type": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\HTMLPicture\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Simple class for easy generation o' picture tag HTML code.",
+            "keywords": [
+                "generator",
+                "html",
+                "picture tag"
+            ],
+            "time": "2019-06-04T20:04:16+00:00"
+        },
+        {
+            "name": "waughj/test-hash-item",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/test-hash-item.git",
+                "reference": "fda88b7005a1314b480f9f8b7a1ae380c0d737c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/test-hash-item/zipball/fda88b7005a1314b480f9f8b7a1ae380c0d737c3",
+                "reference": "fda88b7005a1314b480f9f8b7a1ae380c0d737c3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\TestHashItem\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "A collection o’ helper functions for testing properties o’ a hash item",
+            "keywords": [
+                "hash",
+                "tests"
+            ],
+            "time": "2019-06-04T19:21:04+00:00"
+        },
+        {
+            "name": "waughj/verified-arguments",
+            "version": "0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/verified-arguments.git",
+                "reference": "1a1c9158d6c97f62eea1c51e8ee6039408f2a8d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/verified-arguments/zipball/1a1c9158d6c97f62eea1c51e8ee6039408f2a8d8",
+                "reference": "1a1c9158d6c97f62eea1c51e8ee6039408f2a8d8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "6.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\VerifiedArguments\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Safer & simpler way to handle verifying an array o' arguments by existence & type.",
+            "keywords": [
+                "arguments",
+                "array",
+                "safety"
+            ],
+            "time": "2019-01-10T23:55:47+00:00"
+        },
+        {
+            "name": "waughj/verified-arguments-same-type",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/verified-arguments-same-type.git",
+                "reference": "dcd896138233adceeab3e3cfe48da0bb26d70e19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/verified-arguments-same-type/zipball/dcd896138233adceeab3e3cfe48da0bb26d70e19",
+                "reference": "dcd896138233adceeab3e3cfe48da0bb26d70e19",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "waughj/verified-arguments": ">=0.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "6.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\VerifiedArgumentsSameType\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "List o' verified arguments wherein given arguments must be the same type as defaults.",
+            "keywords": [
+                "arguments",
+                "array",
+                "safety",
+                "type"
+            ],
+            "time": "2018-10-24T17:57:03+00:00"
+        },
+        {
+            "name": "waughj/wordpress-images",
+            "version": "v3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/wordpress-images.git",
+                "reference": "768d9c00f2550e172a04c8f038552b2e7380af81"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/wordpress-images/zipball/768d9c00f2550e172a04c8f038552b2e7380af81",
+                "reference": "768d9c00f2550e172a04c8f038552b2e7380af81",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "waughj/wp-post-thumbnail": ">=0.4.2",
+                "waughj/wp-theme-image": ">=0.3.1",
+                "waughj/wp-theme-option": ">=0.1.1",
+                "waughj/wp-theme-picture": ">=0.3.1",
+                "waughj/wp-upload-image": ">=0.5.3",
+                "waughj/wp-upload-picture": ">=0.5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.1"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/WordPressImages.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Simple classes & shortcodes for easy image HTML generation from common image directories.",
+            "keywords": [
+                "HTML Generator",
+                "image",
+                "loader",
+                "plugin",
+                "shorcodes",
+                "wordpress"
+            ],
+            "time": "2019-10-21T18:48:46+00:00"
+        },
+        {
+            "name": "waughj/wp-admin-menu",
+            "version": "v0.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/wp-admin-menu.git",
+                "reference": "03528487f788c0352cb0e717edde869aa3187747"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/wp-admin-menu/zipball/03528487f788c0352cb0e717edde869aa3187747",
+                "reference": "03528487f788c0352cb0e717edde869aa3187747",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "waughj/flat-to-hierarchy-sorter": "^0.1.0",
+                "waughj/html-attribute-list": "^1.2",
+                "waughj/html-link": ">=1.2.7",
+                "waughj/test-hash-item": ">=2.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\WPAdminMenu\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Template for automatically creating link menu based on menu in WordPress's Menu in Appearance.",
+            "keywords": [
+                "admin",
+                "links",
+                "menu",
+                "template",
+                "wordpress"
+            ],
+            "time": "2019-12-13T19:10:01+00:00"
+        },
+        {
+            "name": "waughj/wp-admin-menu-manager",
+            "version": "v0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/wp-admin-menu-manager.git",
+                "reference": "9e10e804bfdd4395b0865cc8e8dc1e8d78da0898"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/wp-admin-menu-manager/zipball/9e10e804bfdd4395b0865cc8e8dc1e8d78da0898",
+                "reference": "9e10e804bfdd4395b0865cc8e8dc1e8d78da0898",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "waughj/wp-admin-menu": "^0.9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\WPAdminMenuManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Singleton manager for making and printing admin menus & making them easily accessible to both WordPress Admin & public website.",
+            "keywords": [
+                "admin",
+                "defaults",
+                "factory",
+                "links",
+                "menu",
+                "template",
+                "wordpress"
+            ],
+            "time": "2019-12-13T19:38:00+00:00"
+        },
+        {
+            "name": "waughj/wp-get-image-sizes",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/wp-get-image-sizes.git",
+                "reference": "b7874222fa3b2e09456d10ed35029c9972113766"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/wp-get-image-sizes/zipball/b7874222fa3b2e09456d10ed35029c9972113766",
+                "reference": "b7874222fa3b2e09456d10ed35029c9972113766",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "6.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/WPGetImageSizes.php",
+                    "src/WPImageSize.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Simple function for getting media image sizes for WordPress.",
+            "keywords": [
+                "image sizes",
+                "media",
+                "wordpress"
+            ],
+            "time": "2018-12-04T17:13:46+00:00"
+        },
+        {
+            "name": "waughj/wp-media-sizes",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/wp-media-sizes.git",
+                "reference": "1afc0436807a33f8722d81817f8dae5779ed06a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/wp-media-sizes/zipball/1afc0436807a33f8722d81817f8dae5779ed06a7",
+                "reference": "1afc0436807a33f8722d81817f8dae5779ed06a7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "waughj/test-hash-item": "^2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\WPMediaSizes\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Class that simplifies setting WordPress media sizes.",
+            "keywords": [
+                "media",
+                "sizes",
+                "wordpress"
+            ],
+            "time": "2019-06-06T22:07:37+00:00"
+        },
+        {
+            "name": "waughj/wp-meta-box",
+            "version": "v0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/wp-meta-box.git",
+                "reference": "aec3dd5646e49eade8ead674d85112bca87a0c7f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/wp-meta-box/zipball/aec3dd5646e49eade8ead674d85112bca87a0c7f",
+                "reference": "aec3dd5646e49eade8ead674d85112bca87a0c7f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "waughj/test-hash-item": ">=2.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\WPMetaBox\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Simple class for easily adding meta boxes for WordPress admin editors.",
+            "keywords": [
+                "meta",
+                "meta box",
+                "wordpress"
+            ],
+            "time": "2020-02-19T22:08:48+00:00"
+        },
+        {
+            "name": "waughj/wp-post-thumbnail",
+            "version": "v0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/wp-post-thumbnail.git",
+                "reference": "1088f027237d54b5534921658d0a84d2e239e3e7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/wp-post-thumbnail/zipball/1088f027237d54b5534921658d0a84d2e239e3e7",
+                "reference": "1088f027237d54b5534921658d0a84d2e239e3e7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "waughj/wp-upload-picture": ">=0.5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\WPPostThumbnail\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Simple class for getting WordPress thumbnail",
+            "keywords": [
+                "thumbnail",
+                "wordpress"
+            ],
+            "time": "2019-09-05T22:22:55+00:00"
+        },
+        {
+            "name": "waughj/wp-scripts",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/wp-scripts.git",
+                "reference": "d848e2e13dede339d73b9f9992b99fdd432bb0b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/wp-scripts/zipball/d848e2e13dede339d73b9f9992b99fdd432bb0b4",
+                "reference": "d848e2e13dede339d73b9f9992b99fdd432bb0b4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "waughj/file-loader": "*",
+                "waughj/wp-meta-box": ">=0.2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\WPScripts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "WordPress component for easily adding CSS stylesheets & JavaScript files.",
+            "keywords": [
+                "plugin",
+                "scripts",
+                "stylesheets",
+                "wordpress"
+            ],
+            "time": "2019-11-15T17:11:56+00:00"
+        },
+        {
+            "name": "waughj/wp-theme-image",
+            "version": "v0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/wp-theme-image.git",
+                "reference": "1a0158ab706bd0fe6a3e50030f4e1090db79b40d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/wp-theme-image/zipball/1a0158ab706bd0fe6a3e50030f4e1090db79b40d",
+                "reference": "1a0158ab706bd0fe6a3e50030f4e1090db79b40d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "waughj/directory": ">=0.3.1",
+                "waughj/file-loader": ">=0.5.4",
+                "waughj/html-image": ">=0.9.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\WPThemeImage\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Class for autogenerating HTML for WordPress theme image.",
+            "keywords": [
+                "image",
+                "theme",
+                "wordpress"
+            ],
+            "time": "2019-08-28T21:16:23+00:00"
+        },
+        {
+            "name": "waughj/wp-theme-option",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/wp-theme-option.git",
+                "reference": "ae2536047228d2872bf38eab611c5c98a491bd0f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/wp-theme-option/zipball/ae2536047228d2872bf38eab611c5c98a491bd0f",
+                "reference": "ae2536047228d2872bf38eab611c5c98a491bd0f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "waughj/verified-arguments-same-type": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\WPThemeOption\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Classes for simplifying the creation of theme options, option sections, & option pages.",
+            "keywords": [
+                "generator",
+                "option",
+                "theme",
+                "wordpress"
+            ],
+            "time": "2019-06-04T19:44:41+00:00"
+        },
+        {
+            "name": "waughj/wp-theme-picture",
+            "version": "v0.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/wp-theme-picture.git",
+                "reference": "03f7caae7e0aabd8617c3f9f0de7c1c62bcca80e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/wp-theme-picture/zipball/03f7caae7e0aabd8617c3f9f0de7c1c62bcca80e",
+                "reference": "03f7caae7e0aabd8617c3f9f0de7c1c62bcca80e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "waughj/html-picture": ">=0.7.2",
+                "waughj/wp-theme-image": ">=0.3.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\WPThemePicture\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Class for autogenerating picture tag HTML for WordPress theme image.",
+            "keywords": [
+                "picture tag",
+                "theme",
+                "wordpress"
+            ],
+            "time": "2019-06-04T20:11:41+00:00"
+        },
+        {
+            "name": "waughj/wp-upload-image",
+            "version": "v0.5.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/wp-upload-image.git",
+                "reference": "ca9df3292c1a3b8b0d9d72f5f7c4d1a4c30be98b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/wp-upload-image/zipball/ca9df3292c1a3b8b0d9d72f5f7c4d1a4c30be98b",
+                "reference": "ca9df3292c1a3b8b0d9d72f5f7c4d1a4c30be98b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "waughj/file-loader": ">=0.5.4",
+                "waughj/html-image": ">=0.9.2",
+                "waughj/wp-get-image-sizes": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\WPUploadImage\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Class for autogenerating HTML for WordPress media image with just the ID.",
+            "keywords": [
+                "media image",
+                "wordpress"
+            ],
+            "time": "2019-06-04T20:13:28+00:00"
+        },
+        {
+            "name": "waughj/wp-upload-picture",
+            "version": "v0.5.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/wp-upload-picture.git",
+                "reference": "fd72760e3d74203944bdd58dd446635edbc97b9c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/wp-upload-picture/zipball/fd72760e3d74203944bdd58dd446635edbc97b9c",
+                "reference": "fd72760e3d74203944bdd58dd446635edbc97b9c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "waughj/html-picture": ">=0.7.2",
+                "waughj/test-hash-item": ">=2.0.0",
+                "waughj/wp-get-image-sizes": "*",
+                "waughj/wp-upload-image": ">=0.5.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\WPUploadPicture\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Class for autogenerating picture tag HTML for WordPress media image with just the ID.",
+            "keywords": [
+                "media image",
+                "picture tag",
+                "wordpress"
+            ],
+            "time": "2019-06-04T20:17:28+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

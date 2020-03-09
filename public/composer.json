@@ -1,0 +1,25 @@
+{
+    "name": "waugh/jaimeson",
+    "description": "Theme for JaimesonWaugh.com",
+    "type": "project",
+    "license": "GPL3",
+    "authors": [
+      {
+        "name": "Jaimeson Waugh",
+        "email": "waughjai@gmail.com"
+      }
+    ],
+    "require": {
+      "timber/timber": "^1.15",
+        "waughj/copyright-year": "^2.0",
+        "waughj/wp-admin-menu-manager": "^0.6.0",
+        "waughj/wordpress-images": "^3.1",
+        "waughj/wp-scripts": "^2.1",
+        "waughj/wp-media-sizes": "^0.1.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Waugh\\Portfolio\\": "./src/"
+      }
+    }
+  }
