@@ -1,0 +1,10 @@
+<header>
+    <h1 class="hed-logo"><a class="hed-logo-a" href="{{ path.home }}"><img class="hed-logo-img" src="{{ header.logo.source }}" alt="Jaimeson Waugh’s Portfolio" /></a></h1>
+    <nav>
+        <ul>
+            {% for link in header.navigation %}
+                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>

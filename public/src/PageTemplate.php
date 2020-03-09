@@ -17,6 +17,7 @@ class PageTemplate
     {
         return
         [
+            "posts" => Timber::get_posts(),
             "header" => new Header(),
             "footer" => new Footer(),
             "path" => new Path()
