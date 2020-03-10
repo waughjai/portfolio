@@ -66,6 +66,7 @@ PageTemplate::print
                 "Git & Subversion",
                 "Gulp, Webpack, & Grunt",
                 [ "parent" => "SQL", "children" => [ "MySQL" ] ],
+                [ "parent" => "Security Headers", "children" => [ "Content Security Policy" ] ],
                 "Linux / UNIX Terminal",
                 "Bash",
                 "Basic Vim Editing",

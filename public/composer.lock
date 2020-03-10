@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee85041eda88554c8a78a5d32f2dbb43",
+    "content-hash": "a2dd6f0f3d8bf1eafb7b876e5189d325",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -1552,6 +1552,53 @@
                 "wordpress"
             ],
             "time": "2019-09-05T22:22:55+00:00"
+        },
+        {
+            "name": "waughj/wp-post-type",
+            "version": "v0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waughjai/wp-post-type.git",
+                "reference": "5ab4534f5ee74d0580f0d3c0da67bf16cfa9ae61"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waughjai/wp-post-type/zipball/5ab4534f5ee74d0580f0d3c0da67bf16cfa9ae61",
+                "reference": "5ab4534f5ee74d0580f0d3c0da67bf16cfa9ae61",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "waughj/test-hash-item": ">=2.0.0",
+                "waughj/verified-arguments": "*",
+                "waughj/wp-meta-box": ">=0.2.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WaughJ\\WPPostType\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaimeson Waugh",
+                    "email": "waughjai@gmail.com"
+                }
+            ],
+            "description": "Simple class for easily creating new post types for a WordPress site.",
+            "keywords": [
+                "post",
+                "type",
+                "wordpress"
+            ],
+            "time": "2020-02-10T23:56:50+00:00"
         },
         {
             "name": "waughj/wp-scripts",
