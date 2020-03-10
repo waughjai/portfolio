@@ -1,0 +1,12 @@
+{% if skill is iterable %}
+    <li>
+        {{ skill.parent }}
+        <ul>
+            {% for child in skill.children %}
+                <li>{{ child }}</li>
+            {% endfor %}
+        </ul>
+    </li>
+{% else %}
+    <li>{{ skill }}</li>
+{% endif %}

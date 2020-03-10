@@ -2,7 +2,7 @@
 
 {% block body %}
     {% for post in posts %}
-        <article>
+        <article class="page page-{{ post.slug }}">
             <h1>{{ post.title }}</h1>
             <div>{{ post.content }}</div>
         </article>

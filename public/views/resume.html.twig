@@ -1,0 +1,76 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <article class="page page-resume">
+        <h1>{{ page.title }}</h1>
+        {% include "partials/resume-pdf-link.html.twig" %}
+        <ul class="jw-basic-menu">
+            <li class="jw-basic-menu-i"><a class="jw-basic-menu-i-a" href="#contact">Contact</a></li>
+            <li class="jw-basic-menu-i"><a class="jw-basic-menu-i-a" href="#career-summary">Career Summary</a></li>
+            <li class="jw-basic-menu-i"><a class="jw-basic-menu-i-a" href="#education">Education</a></li>
+            <li class="jw-basic-menu-i"><a class="jw-basic-menu-i-a" href="#job-experience">Job Experience</a></li>
+            <li class="jw-basic-menu-i"><a class="jw-basic-menu-i-a" href="#projects">Projects</a></li>
+            <li class="jw-basic-menu-i"><a class="jw-basic-menu-i-a" href="#skills">Skills</a></li>
+        </ul>
+        <section id="contact" class="resume-contact resume-sect">
+            <h2>Jaimeson Waugh</h2>
+            <ul>
+                <li>SeaTac, WA</li>
+                <li><a href="tel:4255247163">(425)-524-7163</a></li>
+                <li><a href="mailto:waughjai@gmail.com">waughjai@gmail.com</a></li>
+            </ul>
+        </section>
+        <section id="career-summary" class="resume-summary resume-sect">
+            <h2>Career Summary:</h2>
+            <p>Create websites and other interactive media that are beautiful, fast, stable, and, above all, user-friendly.</p>
+        </section>
+        <section id="job-experience" class="resume-exp resume-sect">
+            <h2>Job Experience:</h2>
+            {% for job in resume.jobs %}
+                <div>
+                    <h3><a href="{{ job.url }}">{{ job.title }}</a> – {{ job.time }}</h3>
+                    <h4>{{ job.employer }}</h4>
+                    <ul>
+                        {% for point in job.description %}
+                            <li>{{ point }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+        </section>
+        <section id="education" class="resume-edu resume-sect">
+            <h2>Education:</h2>
+            <p><b>Bachelor in Science, Multimedia Design and Development, 2015</b></p>
+            <p><span class="jw-thin">DeVry University, Federal Way, WA</span></p>
+            <p>Concentration: Web Design</p><p>GPA: 3.88</p>
+        </section>
+        <section id="projects" class="resume-projects resume-sect">
+            <h2>Projects:</h2>
+            {% for project in resume.projects %}
+                <div>
+                    <h3>{{ project.title }}</h3>
+                    <ul>
+                        <li>{{ project.description }}</li>
+                        <li><a href="{{ project.url }}">{{ project.url }}</a></li>
+                    </ul>
+                </div>
+            {% endfor %}
+            <div><a class="jw-btn" href="{{ path.home }}">See more of my work…</a></div>
+        </section>
+        <section id="skills" class="resume-skills resume-sect">
+            <h2>Skills:</h2>
+            <ul class="resume-skills-list">
+                {% for skill in resume.skills %}
+                    {% include "partials/portfolio-skill.html.twig" %}
+                {% endfor %}
+            </ul>
+            <h3>Currently Learning</h3>
+            <ul class="resume-skills-list">
+                {% for skill in resume.currentlyLearning %}
+                    {% include "partials/portfolio-skill.html.twig" %}
+                {% endfor %}
+            </ul>
+        </section>
+        {% include "partials/resume-pdf-link.html.twig" %}
+    </article>
+{% endblock %}
