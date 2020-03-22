@@ -68,11 +68,14 @@ class ProjectPostType
         return ( string )( self::$postType->getMetaBox( "source" )->getValue( $id ) );
     }
 
-    /*
-    public static function getToolsList( int $id ) : array
+    public static function getAllProjects() : array
     {
-        $listString = ( string )( self::$postType->getMetaBox( "source" )->getValue( $id ) );
-    }*/
+        return WPQuery::getPosts
+        ([
+            'post_type' => 'project',
+            'number_of_posts' => -1
+        ]);
+    }
 
     static WPPostType $postType;
 }

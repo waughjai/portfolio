@@ -32,7 +32,7 @@ class Project
     {
         try
         {
-            return new WPPostThumbnail( $this->id );
+            return new WPPostThumbnail( $this->id, [ 'img-attributes' => [ 'class' => 'project-thumb-img' ] ] );
         }
         catch ( WPMissingPostThumbnailException $e )
         {
@@ -47,6 +47,11 @@ class Project
             fn( \WP_Term $term ) => new Tool( $term ),
             wp_get_object_terms( $this->id, 'project_tool', [ 'p' => $this->id, 'post_type' => 'project' ] )
         );
+    }
+
+    public function getUrl() : string
+    {
+        return get_permalink( $this->id );
     }
 
     private int $id;

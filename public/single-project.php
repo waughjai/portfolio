@@ -7,7 +7,7 @@ use Timber\Timber;
 
 PageTemplate::print
 (
-    "project",
+    "single-project",
     [
         "projects" => array_map( fn( \Timber\Post $post ) => new Project( $post->id ), Timber::get_posts() )
     ]
