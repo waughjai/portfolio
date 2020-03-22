@@ -3,6 +3,9 @@
 declare( strict_types = 1 );
 namespace Waugh\Portfolio;
 
+use WaughJ\WPPostThumbnail\WPPostThumbnail;
+use WaughJ\WPPostThumbnail\WPMissingPostThumbnailException;
+
 class Project
 {
     public function __construct( int $id )
@@ -23,6 +26,18 @@ class Project
     public function getSource() : string
     {
         return ProjectPostType::getProjectSource( $this->id );
+    }
+
+    public function getThumbnail() : ?WPPostThumbnail
+    {
+        try
+        {
+            return new WPPostThumbnail( $this->id );
+        }
+        catch ( WPMissingPostThumbnailException $e )
+        {
+            return null;
+        }
     }
 
     public function getTools() : array

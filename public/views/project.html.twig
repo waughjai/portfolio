@@ -4,6 +4,7 @@
     {% for project in projects %}
         <article class="page project project-{{ project.slug }}">
             <h1>{{ project.title }}</h1>
+            <div>{{ project.thumbnail }}</div>
             <h2>Summary:</h2>
             <div>{{ project.content }}</div>
             <h2>Source</h2>
