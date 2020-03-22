@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    {% for project in projects %}
+        <article class="page project project-{{ project.slug }}">
+            <h1>{{ project.title }}</h1>
+            <h2>Summary:</h2>
+            <div>{{ project.content }}</div>
+            <h2>Source</h2>
+            <div><a href="{{ project.source }}">{{ project.source }}</a></div>
+            <h2>Tools</h2>
+            <ul>
+                {% for tool in project.tools %}
+                    <li><a href="{{ tool.url }}">{{ tool.title }}</li>
+                {% endfor %}
+            </ul>
+        </article>
+    {% endfor %}
+{% endblock %}
