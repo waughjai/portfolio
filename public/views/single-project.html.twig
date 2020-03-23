@@ -2,12 +2,12 @@
 
 {% block body %}
     {% for project in projects %}
-        <article class="page project single-project project-{{ project.slug }}">
+        <article class="post page project single-project project-{{ project.slug }}">
             <h1 class="project-nom">{{ project.title }}</h1>
             <div class="project-thumb">{{ project.thumbnail }}</div>
             <div class="project-sec project-summary">
                 <h2 class="project-sec-nom">Summary:</h2>
-                <div>{{ project.content }}</div>
+                <div>{{ function( "wpautop", project.content ) }}</div>
             </div>
             <div class="project-sec project-source">
                 <h2 class="project-sec-nom">Source</h2>
@@ -17,7 +17,7 @@
                 <h2 class="project-sec-nom">Tools</h2>
                 <ul class="project-tools-l">
                     {% for tool in project.tools %}
-                        <li class="project-tools-i"><a class="project-tools-a" href="{{ tool.url }}">{{ tool.title }}</li>
+                        <li class="project-tools-i"><a class="project-tools-a" href="{{ tool.url }}">{{ tool.title }}</a></li>
                     {% endfor %}
                 </ul>
             </div>

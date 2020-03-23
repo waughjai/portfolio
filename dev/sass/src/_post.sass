@@ -1,0 +1,27 @@
+@import '../inc/_colors'
+    
+.post
+    max-width: 60em
+    margin: 0 auto
+    p,
+    li
+        line-height: 1.5em
+    a,
+    a:link,
+    a:visited
+        text-decoration: underline
+        color: $mainColor
+    a:hover
+        text-decoration: none
+    
+@media ( min-width: 1000px )
+    .post
+        font-size: 125%
+    
+@media ( min-width: 1600px )
+    .post
+        font-size: 133%
+    
+@media ( min-width: 1920px )
+    .post
+        font-size: 150%

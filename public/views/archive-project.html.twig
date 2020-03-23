@@ -2,7 +2,7 @@
 
 {% block body %}
     {% for project in projects %}
-        <article class="page project archive-project project-{{ project.slug }}">
+        <article class="post page project archive-project project-{{ project.slug }}">
             <h1 class="project-nom"><a href="{{ project.url }}">{{ project.title }}</a></h1>
             <div class="project-thumb"><a href="{{ project.url }}">{{ project.thumbnail }}</a></div>
             <div class="project-sec project-summary">

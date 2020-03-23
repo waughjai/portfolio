@@ -5,10 +5,12 @@
     {{ wp_head }}
 </head>
 <body>
-    {% include "partials/header.html.twig" %}
-    <main>
-        {% block body %}{% endblock %}
-    </main>
+    <div class="not-footer">
+        {% include "partials/header.html.twig" %}
+        <main>
+            {% block body %}{% endblock %}
+        </main>
+    </div>
     {% include "partials/footer.html.twig" %}
     {{ wp_footer }}
 </body>
