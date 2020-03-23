@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sass -w --sourcemap=none --style=compressed dev/sass:public/css

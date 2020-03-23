@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title></title>
+    {{ wp_head }}
 </head>
 <body>
     {% include "partials/header.html.twig" %}
@@ -9,5 +10,6 @@
         {% block body %}{% endblock %}
     </main>
     {% include "partials/footer.html.twig" %}
+    {{ wp_footer }}
 </body>
 </html>

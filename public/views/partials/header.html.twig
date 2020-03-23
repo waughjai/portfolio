@@ -1,9 +1,9 @@
-<header>
+<header class="hed">
     <h1 class="hed-logo"><a class="hed-logo-a" href="{{ path.home }}"><img class="hed-logo-img" src="{{ header.logo.source }}" alt="Jaimeson Waugh’s Portfolio" /></a></h1>
-    <nav>
-        <ul>
+    <nav class="hed-nav">
+        <ul class="hed-nav-l">
             {% for link in header.navigation %}
-                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                <li class="hed-nav-i"><a class="hed-nav-a" href="{{ link.url }}">{{ link.title }}</a></li>
             {% endfor %}
         </ul>
     </nav>

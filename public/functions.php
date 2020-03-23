@@ -8,6 +8,11 @@ require_once( __DIR__ . '/vendor/autoload.php' );
 use WaughJ\WPAdminMenuManager\WPAdminMenuManager;
 WPAdminMenuManager::createHeaderMenu();
 
+use WaughJ\WPScripts\WPStylesheets;
+WPStylesheets::init();
+WPStylesheets::registerRaw( 'google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900,900i&display=swap' );
+WPStylesheets::register( 'main' );
+
 use WaughJ\WPThemeImage\WPThemeImage;
 WPThemeImage::setDefaultSharedDirectory( "images" );
 
