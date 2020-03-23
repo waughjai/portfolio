@@ -4,7 +4,7 @@
     {% for project in projects %}
         <article class="post page project single-project project-{{ project.slug }}">
             <h1 class="project-nom">{{ project.title }}</h1>
-            <div class="project-thumb">{{ project.thumbnail }}</div>
+            <div class="project-thumb">{{ project.picture }}</div>
             <div class="project-sec project-summary">
                 <h2 class="project-sec-nom">Summary:</h2>
                 <div>{{ function( "wpautop", project.content ) }}</div>

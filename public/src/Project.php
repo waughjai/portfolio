@@ -4,6 +4,7 @@ declare( strict_types = 1 );
 namespace Waugh\Portfolio;
 
 use WaughJ\WPPostThumbnail\WPPostThumbnail;
+use WaughJ\WPPostThumbnail\WPPostThumbnailType;
 use WaughJ\WPPostThumbnail\WPMissingPostThumbnailException;
 
 class Project
@@ -32,12 +33,29 @@ class Project
     {
         try
         {
+            return new WPPostThumbnail( $this->id, [ 'class' => 'project-thumb-img', 'size' => 'thumbnail' ], WPPostThumbnailType::image() );
+        }
+        catch ( WPMissingPostThumbnailException $e )
+        {
+            return null;
+        }
+    }
+
+    public function getPicture() : ?WPPostThumbnail
+    {
+        try
+        {
             return new WPPostThumbnail( $this->id, [ 'img-attributes' => [ 'class' => 'project-thumb-img' ] ] );
         }
         catch ( WPMissingPostThumbnailException $e )
         {
             return null;
         }
+    }
+
+    public function getExcerpt() : string
+    {
+        return get_the_excerpt( $this->id );
     }
 
     public function getTools() : array

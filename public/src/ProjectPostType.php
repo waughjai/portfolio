@@ -16,7 +16,7 @@ class ProjectPostType
             [
                 "singular_name" => "Project",
                 "taxonomies" => [ "project_tool" ],
-                'supports' => [ 'title', 'editor', 'thumbnail' ],
+                'supports' => [ 'title', 'editor', 'thumbnail', 'excerpt' ],
                 "meta_boxes" =>
                 [
                     [

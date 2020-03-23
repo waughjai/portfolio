@@ -6,6 +6,9 @@ declare( strict_types = 1 );
 namespace Waugh\Portfolio;
 
 use Timber\Timber;
+use WaughJ\WPScripts\WPStylesheets;
+
+WPStylesheets::register( 'archive-project' );
 
 PageTemplate::print
 (
