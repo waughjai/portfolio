@@ -22,6 +22,18 @@ class ProjectPostType
                     [
                         "slug" => "source",
                         "name" => "Source"
+                    ],
+                    [
+                        "slug" => "order",
+                        "name" => "Order",
+                        "input-type" => "number"
+                    ]
+                ],
+                "custom_toc" =>
+                [
+                    [
+                        "name" => "Order",
+                        "slug" => "order"
                     ]
                 ]
             ]
@@ -73,7 +85,10 @@ class ProjectPostType
         return WPQuery::getPosts
         ([
             'post_type' => 'project',
-            'number_of_posts' => -1
+            'number_of_posts' => -1,
+            'orderby' => 'meta_value',
+            'meta_key' => 'project-order',
+            'order' => 'ASC'
         ]);
     }
 

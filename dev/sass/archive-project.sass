@@ -3,6 +3,7 @@
 .archive-project
     max-width: 500px
     padding: 0 1em
+    margin: 4em auto
     .project-nom
         font-size: 2em
         font-weight: 900
@@ -21,3 +22,9 @@
         transition: filter 1s
         &:hover
             filter: blur( 1px ) saturate( 50% )
+
+@media ( min-width: 1200px )
+    .archive-projects
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-column-gap: 2em
