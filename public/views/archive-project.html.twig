@@ -2,7 +2,17 @@
 
 {% block body %}
     <article class="post page">
-        <section class="archive-projects">
+        <section class="archive-text-sec">
+            <h1 class="sect-nom">Web Developer / Programming</h1>
+            <p>I develop, design, and maintain efficient and secure websites.</p>
+            <p>Most websites I make with WordPress as the backend so simpler tasks, such as creating blog posts or making simple edits, can be done by clients or delegated to less technologically-adept workers. Themes are made from the ground up using composer modules that simplify and make easier to understand common WordPress mechanics, like loading stylesheets and scripts, creating custom post types and options pages, and implementing WordPress menus. Most composer modules were self-made with unit testing using PHP Unit.</p>
+            <p>I secure websites using security headers, content security policies, and security plugins. I am selective about what plugins I use in WordPress to keep the website lean and minimize vectors for security vulnerabilities.</p>
+            <p>I make websites efficient using responsive image loading, caching, compression, minification, optimization, and simply being selective about what code to implement.</p>
+            <p>I have made and maintained websites with e-commerce using WooCommerce and have made custom WordPress plugins and JavaScript scripts for handling particular client needs, such as survey tools.</p>
+            <p>Non-programming responsibilities include copyediting, copywriting, and keyword research for SEO; social media management; blast email composition; and IT support.</p>
+            <p>You can see much of the nonproprietary code I have made at <a href="https://github.com/waughjai">https://github.com/waughjai</a></p>
+        </section>
+        <section class="archive-projects-sec">
             <h2 class="sect-nom">Projects</h2>
             <div class="archive-projects-list">
                 {% for project in projects %}
