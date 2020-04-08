@@ -18,7 +18,7 @@
    viewBox="0 0 200 200"
    enable-background="new 0 0 181.334 111"
    xml:space="preserve"
-   sodipodi:docname="jaimeson-waugh-logo.svg"
+   sodipodi:docname="jaimeson-waugh-logo-circle.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
    id="metadata117"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
@@ -36,17 +36,22 @@
    inkscape:window-height="1029"
    id="namedview113"
    showgrid="false"
-   inkscape:zoom="1.5275679"
-   inkscape:cx="90.667"
-   inkscape:cy="55.5"
+   inkscape:zoom="3.0551358"
+   inkscape:cx="29.994264"
+   inkscape:cy="124.32818"
    inkscape:window-x="0"
    inkscape:window-y="0"
    inkscape:window-maximized="1"
    inkscape:current-layer="Layer_1" />
-<g
+<circle
+   style="fill:#f8db60;fill-opacity:1;stroke-width:1.02521336"
+   id="path924"
+   cx="100"
+   cy="100"
+   r="100" /><g
    id="g110"
    style="fill:#69499e;fill-opacity:1"
-   transform="matrix(1.1683698,0,0,1.1683712,-4.3090961,36.597016)">
+   transform="matrix(1.0252133,0,0,1.0252134,7.3825499,43.919432)">
 	<g
    id="g6"
    style="fill:#69499e;fill-opacity:1">

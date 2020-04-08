@@ -20,7 +20,23 @@ class PageTemplate
             "posts" => Timber::get_posts(),
             "header" => new Header(),
             "footer" => new Footer(),
-            "path" => new Path()
+            "path" => new Path(),
+            "social" => array_map
+            (
+                fn( array $item ) => new SocialItem( $item ),
+                [
+                    [
+                        'url' => 'https://www.linkedin.com/in/waughjai/',
+                        'title' => 'My LinkedIn',
+                        'image' => 'linkedin-icon.svg'
+                    ],
+                    [
+                        'url' => 'https://github.com/waughjai/',
+                        'title' => 'GitHub',
+                        'image' => 'github-icon.svg'
+                    ]
+                ]
+            )
         ];
     }
 }

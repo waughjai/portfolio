@@ -1,0 +1,39 @@
+@import '../inc/_colors'
+
+.social-l
+    list-style-type: none
+    padding-left: 0
+    text-align: center
+    margin: 0
+
+.social-i
+    margin: 1em auto
+
+.social-a
+    display: inline-block
+    border-radius: 100%
+    width: 48px
+    height: 48px
+    text-align: center
+    padding-top: 8px
+    &,
+    &:link,
+    &:visited
+        background-color: #fff
+        transition: background-color 1s
+    &:hover
+        background-color: $highlightColor
+
+@media ( min-width: 480px )
+    .footer .social-l
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-column-gap: 1em
+        margin-left: 2em
+
+@media ( min-width: 801px )
+    .hed .social-l
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-column-gap: 1em
+        margin-left: 2em

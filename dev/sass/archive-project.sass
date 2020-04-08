@@ -1,11 +1,17 @@
 @import 'inc/_colors'
     
+.sect-nom
+    font-weight: 900
+    text-align: center
+    color: $mainColor
+    font-size: 2em
+
 .archive-project
     max-width: 500px
     padding: 0 1em
     margin: 4em auto
     .project-nom
-        font-size: 2em
+        font-size: 1.75em
         font-weight: 900
         text-align: center
         color: $mainColor
@@ -24,7 +30,10 @@
             filter: blur( 1px ) saturate( 50% )
 
 @media ( min-width: 1200px )
-    .archive-projects
+    .archive-projects-list
         display: grid
         grid-template-columns: 1fr 1fr
         grid-column-gap: 2em
+        margin-bottom: 2em
+    .archive-project
+        margin: 0 auto

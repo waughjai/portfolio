@@ -1,0 +1,7 @@
+<nav class="social">
+    <ul class="social-l">
+        {% for link in social %}
+            <li class="social-i"><a class="social-a" href="{{ link.url }}"><img class="social-img" src="{{ link.imageSource }}" alt="{{ link.title }}" /></a></li>
+        {% endfor %}
+    </ul>
+</nav>

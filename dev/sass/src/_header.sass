@@ -5,46 +5,13 @@
     color: #fff
     padding: 1em
 
-.hed-logo
-    margin: 0
-
-.hed-logo-img
-    display: block
-    margin: 0 auto
-    width: 200px
-    max-width: 200%
-    height: auto
-
-.hed-nav-l
-    list-style-type: none
-    padding-left: 0
-    text-align: center
-    margin: 0
-
-.hed-nav-a
-    &,
-    &:link,
-    &:visited
-        color: #fff
-        transition: color 1s
-        text-decoration: none
-        padding: 0.5em
-        text-transform: uppercase
-        display: block
-        font-weight: 900
-    &:hover
-        color: $highlightColor
-
 @media ( min-width: 801px )
     .hed
         display: flex
         align-items: center
-    .hed-nav-l
-        display: flex
-        align-items: center
-    .hed-nav-i
-        margin-left: 2em
+        height: 100px
+        overflow: hidden
+        padding: 0 1em
 
-@media ( min-width: 1600px )
-    .hed-nav
-        font-size: 125%
+@import '_header-navigation'
+@import '_header-logo'
