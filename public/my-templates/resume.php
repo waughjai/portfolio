@@ -5,6 +5,10 @@
 declare( strict_types = 1 );
 namespace Waugh\Portfolio;
 
+use WaughJ\WPScripts\WPStylesheets;
+
+WPStylesheets::register( 'resume' );
+
 PageTemplate::print
 (
     "resume",
@@ -23,7 +27,7 @@ PageTemplate::print
                     [
                         "Designed and developed websites, WordPress plugins, and Composer modules for small businesses.",
                         "Wrote and edited website copy and carried out and applied keyword research for SEO.",
-                        "Troubleshoot computers and networks for small businesses."
+                        "Troubleshooted computers and networks for small businesses."
                     ]
                 ],
                 [
@@ -71,7 +75,7 @@ PageTemplate::print
                 "Bash",
                 "Basic Vim Editing",
                 "Python",
-                [ "parent" => "C & C++", "children" => [ "Make", "Valgrind" ] ],
+                [ "parent" => "C & Modern C++", "children" => [ "Make", "Valgrind" ] ],
                 "Ruby",
                 "Photoshop & Illustrator",
                 "GIMP & Inkscape",

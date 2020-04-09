@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html moznomarginboxes mozdisallowselectionprint>
+    <head>
+        <style media="print">
+            @page 
+            {
+                size:  auto;
+                margin: 0mm;
+            }
+            body
+            {
+                font-size: 12pt;
+                line-height: 1.5em;
+                margin: 2.54cm; /* 1in */
+                font-family: roboto;
+            }
+            header
+            {
+                text-align: center;
+            }
+            header h1
+            {
+                font-size: 14pt;
+                margin-bottom: 0;
+            }
+            header div
+            {
+                font-weight: 300;
+            }
+            .sect
+            {
+                margin: 1.5em 0;
+            }
+            .sect-nom
+            {
+                margin: 0;
+                font-size: 12pt;
+                text-align: center;
+            }
+            .resume-exp-i-nom,
+            .edu-degree
+            {
+                margin: 0;
+                font-size: 12pt;
+            }
+            .resume-exp-i-empl,
+            .edu-college,
+            .projects-i-nom
+            {
+                margin: 0;
+                font-size: 12pt;
+                font-weight: 300;
+            }
+            .resume-exp-pt-l,
+            .projects-pt-l,
+            .skills-l
+            {
+                padding-left: 1em;
+                margin: 0;
+            }
+            .projects-i
+            {
+                margin-bottom: 1.5em;
+            }
+            .skills-l
+            {
+                column-count: 4;
+            }
+            .splay
+            {
+                display: flex;
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Jaimeson Waugh</h1>
+            <div>SeaTac, WA, 98198<br />
+            (425) 524-7163<br />
+            waughjai@gmail.com</div>
+        </header>
+        <section class="sect">
+            <h2 class="sect-nom">Career Summary</h2>
+            <div>Develop websites and other interactive media that are beautiful, fast, stable, secure, and user-friendly.</div>
+        </section>
+        <section class="sect">
+            <h2 class="sect-nom">Experience</h2>
+            <div class="resume-exp-i">
+                <div class="splay">
+                    <h3 class="resume-exp-i-nom">Web Developer</h3>
+                    <div><strong>11/2017 – Present</strong></div>
+                </div>
+                <h4 class="resume-exp-i-empl">Cascade e-Commerce Solutions, Inc.</h4>
+                <ul class="resume-exp-pt-l">
+                    <li class="resume-exp-pt-i">Designed and developed websites, WordPress plugins, and Composer modules for small businesses.</li>
+                    <li class="resume-exp-pt-i">Wrote and edited website copy and carried out and applied keyword research for SEO.</li>
+                    <li class="resume-exp-pt-i">Troubleshooted computers and networks for small businesses.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="sect">
+            <h2 class="sect-nom">Education</h2>
+            <div class="splay">
+                <h3 class="edu-college"><strong>Bachelor in Science</strong> – Multimedia Design & Development</h3>
+                <div><strong>07/2011 – 02/2015</strong></div>
+            </div>
+            <h4 class="edu-college">Concentration: Web Design</h4>
+            <div>DeVry University – GPA: 3.93</div>
+        </section>
+        <section class="sect">
+            <h2 class="sect-nom">Projects</h2>
+                <div class="projects-i">
+                    <div class="splay">
+                        <h3 class="projects-i-nom">Daily Dote</h3>
+                        <div><strong>07/2018 – Present</strong></div>
+                    </div>
+                    <ul class="projects-pt-l">
+                        <li>Developed WordPress website with WooCommerce shopping cart using Lisplike custom language for advanced shipping price calculations.</li>
+                        <li><a href="https://www.dailydote.com/">https://www.dailydote.com/</a></li>
+                    </ul>
+                </div>
+                <div class="projects-i">
+                    <div class="splay">
+                        <h3 class="projects-i-nom">Boskeopolis Stories</h3>
+                        <div><strong>04/2017 – Present</strong></div>
+                    </div>
+                    <ul class="projects-pt-l">
+                        <li>Developed and designed short story website using a custom-made static site generator in Python with dynamic and interactive stories made in JavaScript.</li>
+                        <li><a href="https://www.boskeopolis-stories.com/">https://www.boskeopolis-stories.com/</a></li>
+                    </ul>
+                </div>
+        </section>
+        <section class="sect">
+            <h2 class="sect-nom">Skills</h2>
+            <div>Responsive Design | WordPress | Modern PHP | Composer | HTML | Twig | CSS | Sass</div>
+            <div>JavaScript | TypeScript | jQuery | Jest | Git | SQL | Python | Ruby | C | Modern C++</div>
+        </section>
+    </body>
+</html>

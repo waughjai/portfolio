@@ -1,0 +1,223 @@
+@import 'inc/_colors'
+
+//
+//  GENERAL
+//
+///////////////////////////////////////////////////////////
+
+.page-resume
+    color: $mainColor
+    max-width: 100%
+
+a.jw-btn
+    display: block
+    padding: .5em
+    margin: 1em auto
+    font-weight: 700
+    text-align: center
+    &,
+    &:link,
+    &:visited
+        background: $mainColor
+        color: #fff
+        text-decoration: none
+        transition: background-color 1s, color 1s
+    &:hover
+        background-color: #fff
+        color: $mainColor
+
+.jw-basic-menu
+    list-style-type: none
+    padding: 0
+    text-align: center
+    margin: 0 auto
+
+.jw-basic-menu-i
+    border: 8px solid $mainColor
+    &:not( :last-child )
+        border-bottom-width: 0
+
+.page-resume a.jw-basic-menu-a
+    display: block
+    text-decoration: none
+    font-weight: 300
+    padding: .5em
+    &,
+    &:link,
+    &:visited
+        transition: background-color 1s, color 1s
+        background: #fff
+        color: $mainColor
+    &:hover
+        color: #fff
+        background-color: $mainColor
+
+.resume-nom
+    text-align: center
+    margin-top: 0
+
+.resume-sect
+    padding: 1em
+
+.resume-sect-alt
+    background-color: $mainColor
+    color: #fff
+
+
+
+//
+//  CONTACT
+//
+///////////////////////////////////////////////////////////
+
+.resume-contact
+    padding: 1em
+    text-align: right
+    line-height: 1.5em
+
+.contact-nom
+    margin: 0
+    color: $mainColor
+    font-size: 1.25em
+
+.contact-l
+    margin: 0
+
+.contact-r
+    display: grid
+    grid-template-columns: 1fr 16px
+    grid-column-gap: 0.25em
+    justify-content: flex-end
+    align-items: center
+
+.contact-k,
+.contact-v
+    grid-row: 1
+    display: inline
+
+.contact-k
+    grid-column: 2
+
+.contact-v
+    grid-column: 1
+    margin-left: 0
+
+.contact-img
+    display: block
+
+
+
+//
+//  SUMMARY
+//
+///////////////////////////////////////////////////////////
+
+.resume-summary
+    p:last-child
+        line-height: 1.75em
+        margin-bottom: 0
+
+
+
+//
+//  EXPERIENCE
+//
+///////////////////////////////////////////////////////////
+
+.resume-exp
+    line-height: 1.75em
+
+.resume-exp-i
+    margin: 1em 0
+
+.resume-exp-i-nom
+    margin: 0
+
+.resume-exp-i-empl
+    margin: 0
+    font-weight: 300
+
+.resume-exp-pt-l
+    margin: 0
+    padding-left: 1em
+
+
+
+//
+//  EDUCATION
+//
+///////////////////////////////////////////////////////////
+
+.resume-edu
+    line-height: 1.5em
+
+.edu-degree,
+.edu-college
+    font-size: 1em
+    margin: 0
+
+.edu-college
+    font-weight: 300
+
+.edu-other-l
+    margin: 0
+
+.edu-other-k,
+.edu-other-v
+    display: inline
+
+.edu-other-v
+    margin: 0
+
+
+
+//
+//  PROJECTS
+//
+///////////////////////////////////////////////////////////
+
+.projects-i
+    margin: 1em 0
+
+.projects-i-nom
+    margin: 0
+
+.projects-pt-l
+    margin: 0
+    padding-left: 1em
+
+.resume-projects a.jw-btn
+    margin-bottom: 0
+
+
+
+//
+//  SKILLS
+//
+///////////////////////////////////////////////////////////
+
+.resume-skills-list
+    padding-left: 1em
+    ul
+        padding-left: 1em
+
+
+
+//
+//  LARGE SCREEN
+//
+///////////////////////////////////////////////////////////
+
+@media ( min-width: 1000px )
+    .resume-sect
+        padding: 2em
+    .jw-basic-menu
+        display: flex
+        justify-content: center
+    .jw-basic-menu-i:not( :last-child )
+        border-bottom-width: 8px
+        border-right-width: 0
+    .resume-skills-list
+        column-count: 3
+        li
+            break-inside: avoid
