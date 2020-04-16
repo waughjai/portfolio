@@ -1,0 +1,97 @@
+@import 'inc/_colors'
+
+//
+//  GENERAL
+//
+///////////////////////////////////////////////////////////
+    
+.page-contact-me
+    padding: 0 1em
+
+.contact-req
+    color: #d73717
+
+    
+
+
+//
+//  INFO
+//
+///////////////////////////////////////////////////////////
+
+.contact-info-nom
+    font-size: 1.25em
+    margin-bottom: 0
+    
+.contact-info-l
+    display: table
+    margin-top: 0
+    
+.contact-info-r
+    display: table-row
+    
+.contact-info-k,
+.contact-info-v
+    display: table-cell
+
+.contact-info-k
+    padding-right: 0.5em
+
+
+
+//
+//  FORM
+//
+///////////////////////////////////////////////////////////
+
+.contact-info-form
+    margin-top: 2em
+
+.wpcf7-form-control
+    font-size: 1em
+    font-family: inherit
+    padding: 0.25em
+    width: 100%
+    border: 1px solid $mainColor
+    color: $mainColor
+    margin-top: 0.25em
+    &:focus
+        border-color: $highlightColor
+
+.wpcf7-submit
+    border: none
+    background-color: $mainColor
+    color: #fff
+    transition: color 1s, background-color 1s
+    cursor: pointer
+    padding: 0.5em
+    &:hover
+        background-color: #fff
+        color: $mainColor
+
+span.wpcf7-not-valid-tip
+    color: #d73717
+
+div.wpcf7-response-output
+    background-color: #d73717
+    color: #fff
+    border: none
+    padding: 0.5em
+    margin: 0 0 2em 0
+
+
+
+//
+//  LARGE SCREEN
+//
+///////////////////////////////////////////////////////////
+
+@media ( min-width: 801px )
+    .contact
+        display: grid
+        grid-template-columns: max-content 1fr
+        grid-column-gap: 4em
+    .contact-info-form,
+    .contact-info-form-nom,
+    .contact-info-nom
+        margin-top: 0

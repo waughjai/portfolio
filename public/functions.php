@@ -12,6 +12,10 @@ use WaughJ\WPScripts\WPStylesheets;
 WPStylesheets::init();
 WPStylesheets::registerRaw( 'google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900,900i&display=swap' );
 WPStylesheets::register( 'main' );
+WPStylesheets::registerPageMetaBox();
+
+use WaughJ\WordPressImages\WordPressImages;
+WordPressImages::init();
 
 use WaughJ\WPThemeImage\WPThemeImage;
 WPThemeImage::setDefaultSharedDirectory( "images" );

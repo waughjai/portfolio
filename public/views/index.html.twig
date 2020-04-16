@@ -3,7 +3,7 @@
 {% block body %}
     {% for post in posts %}
         <article class="post page page-{{ post.slug }}">
-            <h1>{{ post.title }}</h1>
+            <h1 class="post-nom">{{ post.title }}</h1>
             <div>{{ post.content }}</div>
         </article>
     {% endfor %}
