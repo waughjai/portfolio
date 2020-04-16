@@ -1,4 +1,14 @@
 <footer class="footer">
     <div class="footer-cpy">© {{ footer.copyrightYear }} Jaimeson Waugh.</div>
     {% include "partials/social.html.twig" %}
+    <dl class="contact-l footer-contact-l">
+        <div class="contact-r footer-contact-r">
+            <dt class="contact-k footer-contact-k"><img src="{{ path.themeImage( "mail-icon.svg" ) }}" alt="Email:" class="footer-contact-icon" /></dt>
+            <dd class="contact-v footer-contact-v"><a class="footer-contact-a" href="mailto:waughjai@gmail.com">waughjai@gmail.com</a></dd>
+        </div>
+        <div class="contact-r footer-contact-r">
+            <dt class="contact-k footer-contact-k"><img src="{{ path.themeImage( "phone-icon.svg" ) }}" alt="Phone Number:" class="footer-contact-icon" /></dt>
+            <dd class="contact-v footer-contact-v"><a class="footer-contact-a" href="tel:14255247163">(425)-524-7163</a></dd>
+        </div>
+    </dl>
 </footer>
