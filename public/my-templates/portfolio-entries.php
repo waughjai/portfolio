@@ -7,8 +7,10 @@ namespace Waugh\Portfolio;
 
 use Timber\Timber;
 use WaughJ\WPScripts\WPStylesheets;
+use WaughJ\WPScripts\WPScripts;
 
 WPStylesheets::register( 'archive-project' );
+WPScripts::register( 'archive-project' );
 
 PageTemplate::print
 (

@@ -10,9 +10,14 @@ WPAdminMenuManager::createHeaderMenu();
 
 use WaughJ\WPScripts\WPStylesheets;
 WPStylesheets::init();
+WPStylesheets::deregisterWPDefaults();
 WPStylesheets::registerRaw( 'google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900,900i&display=swap' );
 WPStylesheets::register( 'main' );
 WPStylesheets::registerPageMetaBox();
+
+use WaughJ\WPScripts\WPScripts;
+WPScripts::init();
+WPScripts::deregisterWPDefaults();
 
 use WaughJ\WordPressImages\WordPressImages;
 WordPressImages::init();
