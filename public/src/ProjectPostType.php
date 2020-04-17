@@ -92,5 +92,5 @@ class ProjectPostType
         ]);
     }
 
-    static WPPostType $postType;
+    static $postType;
 }

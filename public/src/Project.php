@@ -62,7 +62,7 @@ class Project
     {
         return array_map
         (
-            fn( \WP_Term $term ) => new Tool( $term ),
+            function( \WP_Term $term ) { return new Tool( $term ); },
             wp_get_object_terms( $this->id, 'project_tool', [ 'p' => $this->id, 'post_type' => 'project' ] )
         );
     }
@@ -72,5 +72,5 @@ class Project
         return get_permalink( $this->id );
     }
 
-    private int $id;
+    private $id;
 }

@@ -12,6 +12,6 @@ PageTemplate::print
 (
     "single-project",
     [
-        "projects" => array_map( fn( \Timber\Post $post ) => new Project( $post->id ), Timber::get_posts() )
+        "projects" => array_map( function( \Timber\Post $post ) { return new Project( $post->id ); }, Timber::get_posts() )
     ]
 );

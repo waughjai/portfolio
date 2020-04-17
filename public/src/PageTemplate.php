@@ -23,7 +23,7 @@ class PageTemplate
             "path" => new Path(),
             "social" => array_map
             (
-                fn( array $item ) => new SocialItem( $item ),
+                function( array $item ) { return new SocialItem( $item ); },
                 [
                     [
                         'url' => 'https://www.linkedin.com/in/waughjai/',

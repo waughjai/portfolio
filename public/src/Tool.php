@@ -21,6 +21,6 @@ class Tool
         return $this->url;
     }
 
-    private string $name;
-    private string $url;
+    private $name;
+    private $url;
 }

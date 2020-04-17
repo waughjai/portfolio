@@ -18,7 +18,7 @@ PageTemplate::print
     [
         "projects" => array_map
         (
-            fn( \Timber\Post $post ) => new Project( $post->id ),
+            function( \Timber\Post $post ) { return new Project( $post->id ); },
             ProjectPostType::getAllProjects()
         )
     ]

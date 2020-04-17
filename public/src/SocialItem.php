@@ -29,7 +29,7 @@ class SocialItem
         return $this->image->getSource();
     }
 
-    private string $url;
-    private string $title;
-    private WPThemeImage $image;
+    private $url;
+    private $title;
+    private $image;
 }
