@@ -2,3 +2,4 @@ public/vendor
 .sass-cache
 node_modules
 dev/js-babel/
+package-lock.json
