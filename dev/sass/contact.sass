@@ -8,9 +8,6 @@
 .page-contact-me
     padding: 0 1em
 
-.contact-req
-    color: #d73717
-
     
 
 
@@ -19,68 +16,11 @@
 //
 ///////////////////////////////////////////////////////////
 
+.contact-info
+    max-width: 12em
+    margin: 0 auto
+    line-height: 1.5em
+
 .contact-info-nom
     font-size: 1.25em
     margin-bottom: 0
-
-
-
-//
-//  FORM
-//
-///////////////////////////////////////////////////////////
-
-.contact-info-form
-    margin-top: 2em
-
-.wpcf7-form-control
-    font-size: 1em
-    font-family: inherit
-    padding: 0.25em
-    width: 100%
-    border: 1px solid $mainColor
-    color: $mainColor
-    margin-top: 0.25em
-    &:focus
-        border-color: $highlightColor
-
-.wpcf7-submit
-    border: none
-    background-color: $mainColor
-    color: #fff
-    transition: color 1s, background-color 1s
-    cursor: pointer
-    padding: 0.5em
-    &:hover
-        background-color: #fff
-        color: $mainColor
-
-span.wpcf7-not-valid-tip
-    color: #d73717
-
-div.wpcf7-response-output
-    background-color: #d73717
-    color: #fff
-    border: none
-    padding: 0.5em
-    margin: 0 0 2em 0
-
-div.wpcf7-mail-sent-ok
-    background-color: #2b803c
-
-
-
-//
-//  LARGE SCREEN
-//
-///////////////////////////////////////////////////////////
-
-@media ( min-width: 801px )
-    .contact
-        display: grid
-        grid-template-columns: max-content 1fr
-        grid-column-gap: 4em
-    .contact-info-form,
-    .contact-info-form-nom,
-    .contact-info-nom
-        margin-top: 0
