@@ -25,51 +25,49 @@ PageTemplate::print
                     "time" => "2017 – Present",
                     "description" =>
                     [
-                        "Designed and developed websites, WordPress plugins, and Composer modules for small businesses.",
-                        "Wrote and edited website copy and carried out and applied keyword research for SEO.",
-                        "Troubleshooted computers and networks for small businesses."
+                        "Design, develop, and manage responsive websites for small businesses.",
+                        "Write and edit website copy and carry out and apply keyword research for SEO.",
+                        "Troubleshoot computers and networks for small businesses."
                     ]
-                ],
-                [
-                    "title" => "Web Developer Intern",
-                    "employer" => "B Town Web",
-                    "url" => "https://www.btownweb.com/",
-                    "time" => "2017",
-                    "description" => [ "Designed and developed WordPress website." ]
                 ]
             ],
             "projects" =>
             [
                 [
+                    "title" => "City Fish",
+                    "description" => "Developed and designed e-commerce website for Seattle fish market using custom-
+made theme.",
+                    "url" => "https://www.cityfish.com"
+                ],
+                [
                     "title" => "Daily Dote",
                     "description" => "Developed WordPress website with WooCommerce shopping cart using Lisplike custom language for advanced shipping price calculations.",
-                    "url" => "https://www.dailydote.com/"
+                    "url" => "https://www.dailydote.com"
                 ],
                 [
                     "title" => "Boskeopolis Stories",
                     "description" => "Developed and designed short story website using a custom-made static site generator in Python with dynamic and interactive stories made in JavaScript.",
-                    "url" => "https://www.boskeopolis-stories.com/"
+                    "url" => "https://www.boskeopolis-stories.com"
                 ],
                 [
                     "title" => "Boskeopolis Land",
                     "description" => "Programmed and designed computer game in C++ with SDL2.",
-                    "url" => "https://www.boskeopolis-land.com/"
+                    "url" => "https://www.boskeopolis-land.com"
                 ]
             ],
             "skills" =>
             [
                 "Responsive Design",
                 [ "parent" => "WordPress", "children" => [ "Theme Development", "Plugin Development" ] ],
-                [ "parent" => "Modern PHP", "children" => [ "Unit Testing with PHPUnit" ] ],
+                [ "parent" => "Modern PHP", "children" => [ "Composer", "Unit Testing with PHPUnit" ] ],
                 "WooCommerce",
-                "Composer",
                 "HTML",
                 "Twig",
                 [ "parent" => "CSS", "children" => [ "Sass" ] ],
-                [ "parent" => "JavaScript", "children" => [ "TypeScript", "jQuery", "Unit Testing with Jest" ] ],
+                [ "parent" => "JavaScript", "children" => [ "Node", "TypeScript", "jQuery", "Unit Testing with Jest" ] ],
                 "Git & Subversion",
-                "Gulp, Webpack, & Grunt",
-                [ "parent" => "SQL", "children" => [ "MySQL" ] ],
+                "Webpack, Gulp, & Grunt",
+                [ "parent" => "SQL", "children" => [ "MySQL", "PostgreSQL" ] ],
                 [ "parent" => "Security Headers", "children" => [ "Content Security Policy" ] ],
                 "Linux / UNIX Terminal",
                 "Bash",
@@ -84,9 +82,11 @@ PageTemplate::print
             "currentlyLearning" =>
             [
                 "Symfony",
-                "Web Assembly",
+                "Laravel",
+                "React",
+                "Next.js",
                 "OpenGL",
-                "Rust"
+                "Lisp"
             ]
         ]
     ]
